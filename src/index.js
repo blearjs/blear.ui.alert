@@ -32,7 +32,7 @@ var Alert = Dialog.extend({
         var the = this;
 
         options = object.assign(true, {}, defaults, options);
-        the.Super({
+        Alert.parent(the, {
             buttons: [options.sure],
             closeable: false,
             headable: true,
